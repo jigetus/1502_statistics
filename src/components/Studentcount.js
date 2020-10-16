@@ -8,7 +8,6 @@ const Studentcount = (props) => {
       duration: 1000,
     },
   });
-  console.log(typeof props.number);
   return (
     <div className="studentcount">
       <span>Количество учеников:</span>
