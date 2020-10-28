@@ -1,14 +1,12 @@
 import React from "react";
-import Studentcount from "./Studentcount";
-import Yearpercennt from "./Yearpercent";
+import Navigation from "./Navigation";
 const Header = (props) => (
   <header>
-    <Yearpercennt />
     <a href="/" className="noselect">
-      <img src="/imgs/Logo_red.png" alt="logo" />
-      {/* <h1>Статистика</h1> */}
+      <img src="/imgs/Logo_white_small.png" alt="logo" />
+      <h1>1502</h1>
     </a>
-    <Studentcount />
+    <Navigation />
   </header>
 );
 export default Header;

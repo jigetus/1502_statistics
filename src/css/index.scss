@@ -22,13 +22,14 @@ a {
                                   supported by Chrome, Edge, Opera and Firefox */
 }
 body {
-  font-family: "SF", sans-serif;
-  background: #1b1e2e;
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
+  background: #1c2237;
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
 #root {
-  width: 95%;
+  width: 85%;
   height: 100vh;
   margin: 0 auto;
 }
@@ -37,74 +38,103 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  .yearpercent {
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    margin-left: 120px;
-    padding-top: 40px;
-    .main {
-      padding-top: 6px;
-      width: 200px;
-      height: 30px;
-      position: relative;
-      box-shadow: 0 0 0 2px black;
-      border-radius: 5px;
-      overflow: hidden;
-      margin-top: 5px;
-      background: rgba(255, 255, 255, 0.4);
-    }
-
-    .fill {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: #c4161c;
-    }
-
-    .content {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: black;
-      font-weight: bold;
-      font-size: 20px;
-    }
-  }
-  .studentcount {
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    margin-right: 120px;
-    padding-top: 40px;
-    .counter {
-      font-size: 28px;
-      padding-top: 6px;
-      font-weight: bold;
-    }
-  }
+  padding-top: 30px;
+  padding-bottom: 30px;
+  box-sizing: border-box;
+  max-height: 130px;
   a {
     display: flex;
     align-items: center;
     img {
-      width: 140px;
+      width: 70px;
     }
     h1 {
-      color: #1d1d1d;
-      font-size: 24px;
-      letter-spacing: 1px;
+      padding: 0;
+      color: white;
+      font-size: 42px;
+      line-height: 70px;
+      // letter-spacing: 1px;
     }
+  }
+  nav {
+    min-height: 70px;
+  }
+  nav > ul {
+    list-style: none;
+    li {
+      display: inline-block;
+      line-height: 70px;
+      color: white;
+      font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+        "Arial", sans-serif;
+      font-weight: 300;
+      cursor: pointer;
+      margin-left: 40px;
+      font-size: 16px;
+      align-items: center;
+      &:hover {
+        border-bottom: 3px solid #f00946;
+      }
+    }
+  }
+}
+
+.studentcount {
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin-right: 120px;
+  padding-top: 40px;
+  .counter {
+    font-size: 28px;
+    padding-top: 6px;
+    font-weight: bold;
+  }
+}
+
+.yearpercent {
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin-left: 120px;
+  padding-top: 40px;
+  .main {
+    padding-top: 6px;
+    width: 200px;
+    height: 30px;
+    position: relative;
+    box-shadow: 0 0 0 2px black;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 5px;
+    background: rgba(255, 255, 255, 0.4);
+  }
+
+  .fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #c4161c;
+  }
+
+  .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
   }
 }
 
