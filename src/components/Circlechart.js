@@ -9,7 +9,6 @@ export default class Circlechart extends React.Component {
       series: [this.props.series],
       options: {
         chart: {
-          height: 280,
           type: "radialBar",
           animations: {
             enabled: true,
@@ -80,7 +79,7 @@ export default class Circlechart extends React.Component {
           options={this.state.options}
           series={this.state.series}
           type="radialBar"
-          height={350}
+          height={320}
         />
       </div>
     );

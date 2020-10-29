@@ -5,7 +5,10 @@ const Circle = (props) => {
   const transitions = useSpring({
     transform: "translate3d(0,0px,0)",
     opacity: 1,
-    from: { transform: "translate3d(0,-80px,0)", opacity: 0 },
+    from: {
+      transform: `translate3d(0,${props.animationTop ? "-" : "+"}80px,0)`,
+      opacity: 0,
+    },
     delay: props.delay,
   });
   return (
