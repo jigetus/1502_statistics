@@ -10,15 +10,20 @@ const Circle = (props) => {
   });
   return (
     <animated.div className="circle-card noselect" style={transitions}>
-      <span className="class">11-Н</span>
+      <span
+        className="title"
+        style={{ fontSize: props.title.length >= 10 ? "12px" : "14px" }}
+      >
+        {props.title}
+      </span>
       <div
         className="circle"
         style={{
           backgroundImage: `url(/imgs/subjects/${props.icon}.${props.type})`,
-          backgroundPosition: props.offset ? `1px -1px` : `-100px -1px`,
+          backgroundPosition: props.offset ? `0px 0px` : `-100px -1px`,
         }}
       ></div>
-      <span className="title">{props.title}</span>
+      <span className="class">11-Н</span>
       <span className="medium">4,56</span>
     </animated.div>
   );

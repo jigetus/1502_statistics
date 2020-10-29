@@ -1,19 +1,23 @@
 import React from "react";
 import ReactApexChart from "react-apexcharts";
 
-export default class Yearchart extends React.Component {
+export default class Circlechart extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      series: [67],
+      series: [this.props.series],
       options: {
         chart: {
           height: 280,
           type: "radialBar",
+          animations: {
+            enabled: true,
+            speed: 1800,
+          },
         },
 
-        colors: ["rgb(149, 132, 235)"],
+        colors: ["#FFB859"],
         plotOptions: {
           radialBar: {
             hollow: {
@@ -21,6 +25,7 @@ export default class Yearchart extends React.Component {
               size: "70%",
             },
             track: {
+              background: "#2D2161",
               dropShadow: {
                 enabled: true,
                 top: 2,
@@ -32,13 +37,21 @@ export default class Yearchart extends React.Component {
             dataLabels: {
               name: {
                 offsetY: -10,
-                color: "#000",
-                fontSize: "14px",
+                color: "#fff",
+                fontSize: "16px",
+                fontFamily: "Open Sans",
               },
               value: {
-                color: "#000",
+                color: "#fff",
                 fontSize: "30px",
                 show: true,
+                fontFamily: "VAG World Bold",
+                formatter: (val) => {
+                  if (this.props.alternativeValue !== undefined) {
+                    return this.props.alternativeValue;
+                  }
+                  return val + this.props.measure;
+                },
               },
             },
           },
@@ -48,29 +61,27 @@ export default class Yearchart extends React.Component {
           gradient: {
             shade: "dark",
             type: "vertical",
-            gradientToColors: ["rgb(70, 59, 125)"],
+            gradientToColors: ["#CA4E73"],
             stops: [0, 100],
           },
         },
         stroke: {
           lineCap: "round",
         },
-        labels: ["Учебный год"],
+        labels: [this.props.title],
       },
     };
   }
 
   render() {
     return (
-      <div id="card">
-        <div id="chart">
-          <ReactApexChart
-            options={this.state.options}
-            series={this.state.series}
-            type="radialBar"
-            height={350}
-          />
-        </div>
+      <div id="chart">
+        <ReactApexChart
+          options={this.state.options}
+          series={this.state.series}
+          type="radialBar"
+          height={350}
+        />
       </div>
     );
   }

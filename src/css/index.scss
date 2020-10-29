@@ -1,7 +1,14 @@
 //import fonts
 @font-face {
-  font-family: "SF";
-  src: url("/fonts/SFNS Display.ttf") format("woff2");
+  font-family: "VAG World Bold";
+  src: url("/fonts/vag_world_bold.eot"); /* IE 9 Compatibility Mode */
+  src: url("/fonts/vag_world_bold.eot?#iefix") format("embedded-opentype"),
+    /* IE < 9 */ url("/fonts/vag_world_bold.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("/fonts/vag_world_bold.woff") format("woff"),
+    /* Firefox >= 3.6, any other modern browser */
+      url("/fonts/vag_world_bold.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("/fonts/vag_world_bold.svg#vag_world_bold")
+      format("svg"); /* Chrome < 4, Legacy iOS */
 }
 
 * {
@@ -9,6 +16,8 @@
   padding: 0;
   box-sizing: border-box;
   color: white;
+  font-smooth: never;
+  -webkit-font-smoothing: none;
 }
 a {
   outline: none;
@@ -24,11 +33,12 @@ a {
                                   supported by Chrome, Edge, Opera and Firefox */
 }
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "VAG World Bold";
   // background: linear-gradient(90deg, #f3f4f4, #e2e2e4);
-  background-color: rgb(45, 43, 109);
+  background-color: #2d266d;
+  // background-image: url(/imgs/bg.png);
   // background-attachment: fixed;
-  // background-repeat: no-repeat;
+  background-repeat: repeat;
 }
 #root {
   width: 100%;
@@ -42,7 +52,7 @@ body {
     position: relative;
   }
   section.top {
-    height: calc(50% - 80px);
+    height: calc(50% - 90px);
     display: flex;
   }
   section#topleft {
@@ -61,25 +71,62 @@ body {
       width: 100%;
     }
     section.top {
-      height: 240px;
+      height: auto;
       display: flex;
       justify-content: center;
+      flex-wrap: wrap;
     }
+    section.bottom {
+      display: flex;
+      justify-content: center;
+      align-self: center;
+      height: auto;
+    }
+
     section#topleft {
       justify-content: center;
     }
+    .logo {
+      height: 70px;
+    }
+    .graphs {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
   }
+}
+.logo {
+  height: 150px;
 }
 .bestclass_title {
   width: 100%;
   padding-top: 20px;
-  font-size: 32pt;
-  color: white;
+  font-size: 24pt;
   height: 80px;
   line-height: 80px;
   text-align: center;
-  font-weight: 900;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
+  color: white;
+  font-family: "VAG World Bold";
+  font-weight: 300;
+}
+.section_title {
+  width: 100%;
+  font-size: 24pt;
+  text-align: center;
+  letter-spacing: 2px;
+  color: white;
+  font-family: "VAG World Bold";
+  font-weight: 300;
+}
+.graphs {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
 }
 
 .circle-card {
@@ -94,21 +141,31 @@ body {
   .circle {
     width: 101px;
     height: 101px;
+    min-width: 101px;
+    min-height: 101px;
     border-radius: 50%;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    // box-shadow: inset 0 0 9px white;
+    border: 3px solid #fff;
     background-repeat: no-repeat;
     background-size: cover;
+    // background: red;
   }
   span.title {
-    padding-top: 6px;
+    padding-bottom: 6px;
     cursor: default;
-    color: #932434;
+    color: white;
+    letter-spacing: 2px;
   }
   span.medium {
     font-weight: bold;
-    font-size: 22px;
-    padding-bottom: 2px;
-    color: white;
+    font-size: 16px;
+    color: #ca4e73;
+    margin-top: -12px;
+  }
+  span.class {
+    color: #ffb859;
+    font-size: 24px;
+    margin-left: -6px;
   }
 }
 .hidecredits {
