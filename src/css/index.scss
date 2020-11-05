@@ -170,6 +170,9 @@ body {
     font-size: 24px;
     margin-left: -6px;
   }
+  &:hover {
+    transform: rotate(20);
+  }
 }
 .hidecredits {
   width: 100%;
@@ -178,4 +181,15 @@ body {
   position: absolute;
   top: 81%;
   left: 0;
+}
+.loading {
+  font-size: 32px;
+}
+.loading_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  flex-direction: column;
 }
