@@ -4,10 +4,12 @@ import { animated, useSpring } from "react-spring";
 const Circle = (props) => {
   const transitions = useSpring({
     transform: "translate3d(0,0px,0)",
+    transform: "scale(1.3)",
     opacity: 1,
     from: {
       transform: `translate3d(0,${props.animationTop ? "-" : "+"}80px,0)`,
       opacity: 0,
+      transform: "scale(0)",
     },
     delay: props.delay,
   });

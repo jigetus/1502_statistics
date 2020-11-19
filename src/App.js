@@ -4,7 +4,6 @@ import Topright from "./components/Topright";
 import Bottomleft from "./components/Bottomleft";
 import Bottomright from "./components/Bottomright";
 import ReactTypingEffect from "react-typing-effect";
-import Loader from "./components/Loader";
 
 const fetchData = async () => {
   return new Promise(async (resolve, reject) => {
@@ -53,7 +52,7 @@ const App = () => {
       </div>
     );
   return (
-    <React.StrictMode>
+    <>
       <img
         src="imgs/logo_white_small.png"
         alt="1502"
@@ -71,7 +70,7 @@ const App = () => {
       <Topright best={best} />
       <Bottomleft top={top} />
       <Bottomright />
-    </React.StrictMode>
+    </>
   );
 };
 

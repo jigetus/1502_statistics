@@ -38,7 +38,7 @@ export default class Circlechart extends React.Component {
                 offsetY: -10,
                 color: "#fff",
                 fontSize: "16px",
-                fontFamily: "Open Sans",
+                fontFamily: "VAG World Bold",
               },
               value: {
                 color: "#fff",
@@ -79,7 +79,7 @@ export default class Circlechart extends React.Component {
           options={this.state.options}
           series={this.state.series}
           type="radialBar"
-          height={320}
+          height={360}
         />
       </div>
     );
