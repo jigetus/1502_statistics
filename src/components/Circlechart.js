@@ -37,7 +37,7 @@ export default class Circlechart extends React.Component {
               name: {
                 offsetY: -10,
                 color: "#fff",
-                fontSize: "16px",
+                fontSize: "25px",
                 fontFamily: "VAG World Bold",
               },
               value: {

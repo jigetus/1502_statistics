@@ -7,16 +7,18 @@ export default class Top10 extends React.Component {
     const avgs = [];
     const labels = [];
     props.top.forEach((el) => {
-      avgs.push(el.AVG.toFixed(2));
+      avgs.push(parseFloat(el.AVG.toFixed(2)));
       labels.push(el.unit);
     });
-
     this.state = {
       options: {
         chart: {
           id: "basic-bar",
           toolbar: {
             show: false,
+          },
+          animations: {
+            enabled: false,
           },
         },
         tooltip: {
@@ -45,11 +47,13 @@ export default class Top10 extends React.Component {
         },
         yaxis: {
           show: false,
+          min: parseFloat((avgs[9] - 0.5).toFixed(2)),
+          max: parseFloat((avgs[0] + 0.1).toFixed(2)),
         },
         dataLabels: {
           enabled: true,
           offsetX: 0,
-          // offsetY: 220,
+          offsetY: 500,
           dropShadow: {
             enabled: true,
             left: 2,
@@ -58,7 +62,7 @@ export default class Top10 extends React.Component {
           },
           style: {
             colors: ["white"],
-            fontSize: 16,
+            fontSize: 17,
             fontFamily: "VAG World Bold",
           },
         },

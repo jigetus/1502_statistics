@@ -34,10 +34,7 @@ a {
 }
 body {
   font-family: "VAG World Bold";
-  // background: linear-gradient(90deg, #f3f4f4, #e2e2e4);
   background-color: #2d266d;
-  // background-image: url(/imgs/bg.png);
-  // background-attachment: fixed;
   background-repeat: repeat;
 }
 #root {
@@ -54,13 +51,13 @@ body {
   section.top {
     height: calc(50% - 110px);
     display: flex;
+    justify-content: center;
   }
   section#topleft {
-    justify-content: flex-end;
+    justify-content: center;
   }
   section.bottom {
     display: flex;
-    // justify-content: center;
     flex-direction: column;
     align-items: center;
   }
@@ -75,6 +72,7 @@ body {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
+      justify-content: center;
     }
     section.bottom {
       display: flex;
@@ -84,7 +82,7 @@ body {
     }
 
     section#topleft {
-      justify-content: center;
+      // justify-content: space-between;
     }
     .logo {
       height: 70px;
@@ -119,7 +117,7 @@ body {
 }
 .section_title {
   width: 100%;
-  font-size: 24pt;
+  font-size: 32pt;
   text-align: center;
   letter-spacing: 2px;
   color: white;
@@ -139,10 +137,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 5px;
   min-width: 136px;
-  margin: 100px 10px;
-  transform: scale(1.1);
+  margin: 100px 80px;
 
   .circle {
     width: 101px;
@@ -150,28 +146,33 @@ body {
     min-width: 101px;
     min-height: 101px;
     border-radius: 50%;
-    // box-shadow: inset 0 0 9px white;
     border: 3px solid #fff;
     background-repeat: no-repeat;
     background-size: cover;
-    // background: red;
+    transform: scale(1.6);
   }
   span.title {
-    padding-bottom: 6px;
+    padding-bottom: 40px;
     cursor: default;
     color: white;
     letter-spacing: 2px;
+    min-height: 80px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   span.medium {
     font-weight: bold;
-    font-size: 16px;
-    color: #ca4e73;
+    font-size: 20px;
+    color: yellow;
     margin-top: -12px;
   }
   span.class {
-    color: #ffb859;
-    font-size: 24px;
+    color: white;
+    font-size: 36px;
     margin-left: -6px;
+    margin-top: 20px;
   }
   &:hover {
     transform: rotate(20);

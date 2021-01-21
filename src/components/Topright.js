@@ -35,7 +35,7 @@ const Topright = (props) => {
         offset={1}
         animationTop={true}
       />
-      <Circle
+      {/* <Circle
         subject={findbyTitle("Литература")}
         icon="litra2"
         type={"svg"}
@@ -58,7 +58,7 @@ const Topright = (props) => {
         offset={1}
         delay={100}
         animationTop={true}
-      />
+      /> */}
     </section>
   );
 };

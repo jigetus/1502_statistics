@@ -11,14 +11,14 @@ const Circle = (props) => {
       opacity: 0,
       transform: "scale(0)",
     },
-    delay: props.delay,
+    // delay: props.delay,
   });
   if (props.subject === undefined) return null;
   return (
-    <animated.div className="circle-card noselect" style={transitions}>
+    <div className="circle-card noselect" style={transitions}>
       <span
         className="title"
-        style={{ fontSize: props.subject.title.length >= 10 ? "12px" : "14px" }}
+        style={{ fontSize: props.subject.title.length >= 10 ? "20px" : "20px" }}
       >
         {props.subject.title}
       </span>
@@ -30,10 +30,10 @@ const Circle = (props) => {
         }}
       ></div>
       <span className="class">{props.subject.unit}</span>
-      <span className="medium">
+      {/* <span className="medium">
         {parseFloat(props.subject.max_mark.toFixed(2))}
-      </span>
-    </animated.div>
+      </span> */}
+    </div>
   );
 };
 export default Circle;
