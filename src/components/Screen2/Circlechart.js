@@ -12,11 +12,11 @@ export default class Circlechart extends React.Component {
           type: "radialBar",
           animations: {
             enabled: true,
-            speed: 1800,
+            speed: 3800,
           },
         },
 
-        colors: ["#FFB859"],
+        colors: ["#b31217"],
         plotOptions: {
           radialBar: {
             hollow: {
@@ -24,7 +24,7 @@ export default class Circlechart extends React.Component {
               size: "70%",
             },
             track: {
-              background: "#2D2161",
+              background: "#000000de",
               dropShadow: {
                 enabled: true,
                 top: 2,
@@ -36,13 +36,13 @@ export default class Circlechart extends React.Component {
             dataLabels: {
               name: {
                 offsetY: -10,
-                color: "#fff",
-                fontSize: "25px",
+                color: "#000",
+                fontSize: "30px",
                 fontFamily: "VAG World Bold",
               },
               value: {
-                color: "#fff",
-                fontSize: "30px",
+                color: "#000",
+                fontSize: "40px",
                 show: true,
                 fontFamily: "VAG World Bold",
                 formatter: (val) => {
@@ -60,7 +60,7 @@ export default class Circlechart extends React.Component {
           gradient: {
             shade: "dark",
             type: "vertical",
-            gradientToColors: ["#CA4E73"],
+            gradientToColors: ["#e52d27"],
             stops: [0, 100],
           },
         },
@@ -79,7 +79,8 @@ export default class Circlechart extends React.Component {
           options={this.state.options}
           series={this.state.series}
           type="radialBar"
-          height={360}
+          height={420}
+          width={600}
         />
       </div>
     );

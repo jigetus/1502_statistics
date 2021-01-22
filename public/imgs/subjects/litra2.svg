@@ -7,8 +7,8 @@
             <stop offset="1" stop-color="#377e98" />
         </linearGradient>
         <linearGradient id="a" x1="111.667" x2="20.246" y1="111.667" y2="20.246" gradientUnits="userSpaceOnUse">
-            <stop offset="0" stop-color="#ca4e73" class="stopColor07758e svgShape" />
-            <stop offset="1" stop-color="#ffb859" class="stopColor087f95 svgShape" />
+            <stop offset="0" stop-color="#b31217" class="stopColor07758e svgShape" />
+            <stop offset="1" stop-color="#e52d27" class="stopColor087f95 svgShape" />
         </linearGradient>
         <clipPath id="b77f947a-5624-430b-a880-0ec8e70f4ac6">
             <circle cx="197" cy="66" r="65" fill="url(#e25a311f-e253-4d73-8b52-760664b16cdc)" />
@@ -56,7 +56,7 @@
             <path id="a848f437-4357-4b7c-b4a2-c59cdff73b78" data-name="path27010"
                 d="M188.1655,98.8819H182.51v2.3558h3.3033l.0238,15.3334h2.3288V98.8819m31.69,13.7166H199.1388a5.0131,5.0131,0,0,1-.0269-10.0256,5.2274,5.2274,0,0,1,5.05,5.3538h-2.33a2.6933,2.6933,0,1,0-5.3521,0,2.5958,2.5958,0,0,0,2.6832,2.3414H219.856v2.33"
                 fill="#fff" />
-            <circle cx="66" cy="66" r="65" fill="url(#a)" />
+            <circle cx="66" cy="66" r="69" fill="url(#a)" />
 
             <polygon
                 points="92.068 36.37 92.068 21.92 65.94 29.79 39.811 21.92 39.811 36.37 32.249 36.37 32.249 78.078 99.751 78.078 99.751 36.37 92.068 36.37"

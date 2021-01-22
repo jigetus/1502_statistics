@@ -7,8 +7,8 @@
             <stop offset="1" stop-color="#08b995" />
         </linearGradient>
         <linearGradient id="a" x1="111.667" x2="20.246" y1="111.667" y2="20.246" gradientUnits="userSpaceOnUse">
-            <stop offset="0" stop-color="#ca4e73" class="stopColor07758e svgShape" />
-            <stop offset="1" stop-color="#ffb859" class="stopColor087f95 svgShape" />
+            <stop offset="0" stop-color="#b31217" class="stopColor07758e svgShape" />
+            <stop offset="1" stop-color="#e52d27" class="stopColor087f95 svgShape" />
         </linearGradient>
     </defs>
     <title>geografija</title>
@@ -16,7 +16,7 @@
         <g id="62eec953-39f9-4223-8a8d-1522abef087c" data-name="Layer 1">
             <rect width="263" height="132" fill="none" />
             <circle cx="197" cy="66" r="65" fill="url(#0d04c7be-1af5-49ad-aebb-d5bd5c8f4b1f)" />
-            <circle cx="66" cy="66" r="65" fill="url(#a)" />
+            <circle cx="66" cy="66" r="69" fill="url(#a)" />
             <path
                 d="M53.5794,100.2917,82.242,128.9542A65.1157,65.1157,0,0,0,128.281,84.613L84.668,41,67.8972,44.6042l-14.5-14.5-4.396,2.5625-11.3333,21,4.5,22.75L59.4234,93.6721l-.3906.3125,2.6716,2.6716,9.3647,8.6615L62.3137,98Z"
                 opacity="0.2" />

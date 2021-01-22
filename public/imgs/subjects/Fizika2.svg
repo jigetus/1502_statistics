@@ -7,8 +7,8 @@
             <stop offset="1" stop-color="#08b995" />
         </linearGradient>
         <linearGradient id="a" x1="111.667" x2="20.246" y1="111.667" y2="20.246" gradientUnits="userSpaceOnUse">
-            <stop offset="0" stop-color="#ca4e73" class="stopColor07758e svgShape" />
-            <stop offset="1" stop-color="#ffb859" class="stopColor087f95 svgShape" />
+            <stop offset="0" stop-color="#b31217" class="stopColor07758e svgShape" />
+            <stop offset="1" stop-color="#e52d27" class="stopColor087f95 svgShape" />
         </linearGradient>
     </defs>
     <title>Fizika</title>
@@ -16,7 +16,7 @@
         <g id="7757fdd6-7db2-412e-afc9-90ffe38352ca" data-name="Layer 1">
             <rect width="263" height="132" fill="none" />
             <circle cx="197" cy="66" r="65" fill="url(#bb3cb013-ea95-4b72-87d9-b81a14f18276)" />
-            <circle cx="66" cy="66" r="65" fill="url(#a)" />
+            <circle cx="66" cy="66" r="69" fill="url(#a)" />
             <path
                 d="M92.0733,38.7181l-12.5762,11.16,10.78,10.78-8.3525,7.4116L52.5733,38.7181l-12.5762,11.16,12.9412,12.941-8.9412,7.934L60.1807,86.9363l-8.8086,7.8163,33.4648,33.4648A65.0678,65.0678,0,0,0,130.1,76.7448Z"
                 opacity="0.2" />

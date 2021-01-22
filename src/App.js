@@ -1,14 +1,16 @@
 import React, { useState, useEffect } from "react";
-import Topleft from "./components/Topleft";
-import Topright from "./components/Topright";
-import Bottomleft from "./components/Bottomleft";
-import Bottomright from "./components/Bottomright";
+import Particles from "react-particles-js";
 import ReactTypingEffect from "react-typing-effect";
+import particlejs_config from "./configs/particlesjs-config";
+import Screen1 from "./components/Screen1/Screen1";
+import Screen2 from "./components/Screen2/Screen2";
+import { CSSTransition, SwitchTransition } from "react-transition-group";
 
+const api = "http://api.stats.srv-g-lemp.lyceum.local";
 const fetchData = async () => {
   return new Promise(async (resolve, reject) => {
-    const best = await fetch("/bestunitsinsubjects?korpus=gamma");
-    const top = await fetch("/top10avg?korpus=gamma");
+    const best = await fetch(api + "/bestunitsinsubjects?korpus=gamma");
+    const top = await fetch(api + "/top10avg?korpus=gamma");
     if (best.ok && top.ok) {
       const best_json = await best.json();
       const top_json = await top.json();
@@ -24,6 +26,7 @@ const fetchData = async () => {
 const App = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
+  const [screen, setScreen] = useState(true);
   const [best, setBest] = useState(null);
   const [top, setTop] = useState(null);
   useEffect(() => {
@@ -34,10 +37,19 @@ const App = () => {
         setLoading(false);
       })
       .catch((error) => {
+        console.log("error");
         setError(error);
         setLoading(false);
       });
   }, [loading, error]);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      console.log("change screen to ", !screen);
+      setScreen(!screen);
+    }, 6000);
+    return () => clearInterval(interval);
+  }, [screen]);
+
   if (loading) return <></>;
   if (error)
     return (
@@ -53,23 +65,25 @@ const App = () => {
     );
   return (
     <>
+      <Particles params={particlejs_config} />
       <img
-        src="imgs/logo_white_small.png"
+        src="imgs/logo_red_notitle.png"
         alt="1502"
         className="logo"
         style={{ position: "absolute" }}
       />
-      <ReactTypingEffect
-        text={["ЛУЧШИЙ КЛАСС В ПРЕДМЕТЕ "]}
-        className="bestclass_title"
-        speed={40}
-        eraseDelay={800000000000}
-        typingDelay={0}
-      />
-      <Topleft best={best} />
-      <Topright best={best} />
-      <Bottomleft top={top} />
-      <Bottomright />
+      <SwitchTransition>
+        <CSSTransition
+          key={true}
+          addEndListener={(node, done) =>
+            node.addEventListener("transitionend", done, false)
+          }
+          classNames="fade"
+          // appear={true}
+        >
+          {screen ? <Screen1 best={best} /> : <Screen2 top={top} />}
+        </CSSTransition>
+      </SwitchTransition>
     </>
   );
 };

@@ -7,8 +7,8 @@
             <stop offset="1" stop-color="#ddbf6b" />
         </linearGradient>
         <linearGradient id="a" x1="111.667" x2="20.246" y1="111.667" y2="20.246" gradientUnits="userSpaceOnUse">
-            <stop offset="0" stop-color="#ca4e73" class="stopColor07758e svgShape" />
-            <stop offset="1" stop-color="#ffb859" class="stopColor087f95 svgShape" />
+            <stop offset="0" stop-color="#b31217" class="stopColor07758e svgShape" />
+            <stop offset="1" stop-color="#e52d27" class="stopColor087f95 svgShape" />
         </linearGradient>
         <clipPath id="fdf5e364-4892-43fe-9b16-8489dfd7f5f4">
             <circle cx="197" cy="66" r="65" fill="url(#b9dcdc36-8df5-42e5-bce3-fb796d11c813)" />
@@ -31,7 +31,7 @@
     <g id="b8876d11-1dac-41ff-8570-5b5bbcdc58cf" data-name="Layer 2">
         <g id="bc5bf81e-faf3-49a6-be8b-28c7088a1b8b" data-name="Layer 1">
             <rect width="263" height="132" fill="none" />
-            <circle cx="197" cy="66" r="65" fill="url(#b9dcdc36-8df5-42e5-bce3-fb796d11c813)" />
+            <circle cx="197" cy="66" r="69" fill="url(#b9dcdc36-8df5-42e5-bce3-fb796d11c813)" />
             <g clip-path="url(#fdf5e364-4892-43fe-9b16-8489dfd7f5f4)">
                 <path
                     d="M262.61,65.2856l-36.1091-36.109-44.0793,5.1182-20.0457,34.33,55.8423,55.8422C243.9131,118.046,261.4605,96.8823,262.61,65.2856Z"
@@ -56,7 +56,7 @@
             <path id="bcfa0daf-817d-4dd2-8af6-66b35e576ef8" data-name="path27010"
                 d="M188.1655,98.8819H182.51v2.3558h3.3033l.0238,15.3334h2.3288V98.8819m31.69,13.7166H199.1388a5.0131,5.0131,0,0,1-.0269-10.0256,5.2274,5.2274,0,0,1,5.05,5.3538h-2.33a2.6933,2.6933,0,1,0-5.3521,0,2.5958,2.5958,0,0,0,2.6832,2.3414H219.856v2.33"
                 fill="#fff" />
-            <circle cx="66" cy="66" r="65" fill="url(#a)" />
+            <circle cx="66" cy="66" r="69" fill="url(#a)" />
             <g clip-path="url(#a4a916af-b22c-4ba3-900c-16910af0916b)">
                 <path
                     d="M131.61,65.2856,95.5012,29.1766,51.4219,34.2948l-20.0457,34.33,55.8423,55.8422C112.9131,118.046,130.4605,96.8823,131.61,65.2856Z"

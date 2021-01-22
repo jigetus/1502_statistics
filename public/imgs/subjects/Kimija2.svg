@@ -7,16 +7,16 @@
             <stop offset="1" stop-color="#08b995" />
         </linearGradient>
         <linearGradient id="a" x1="111.667" x2="20.246" y1="111.667" y2="20.246" gradientUnits="userSpaceOnUse">
-            <stop offset="0" stop-color="#ca4e73" class="stopColor07758e svgShape" />
-            <stop offset="1" stop-color="#ffb859" class="stopColor087f95 svgShape" />
+            <stop offset="0" stop-color="#b31217" class="stopColor07758e svgShape" />
+            <stop offset="1" stop-color="#e52d27" class="stopColor087f95 svgShape" />
         </linearGradient>
     </defs>
     <title>Kimija</title>
     <g id="c8bc150a-93a8-4ad1-91f0-979daf6f67b3" data-name="Layer 2">
         <g id="e9697b08-a873-47b6-a7a8-5df0dbf2d30f" data-name="Layer 1">
             <rect width="263" height="132" fill="none" />
-            <circle cx="197" cy="66" r="65" fill="url(#a)" />
-            <circle cx="66" cy="66" r="65" fill="url(#a)" />
+            <circle cx="197" cy="66" r="69" fill="url(#a)" />
+            <circle cx="66" cy="66" r="69" fill="url(#a)" />
             <path
                 d="M130.5215,73.77,109.8489,53.8145,60.6887,35.875,38.2512,80.5625l-.8125,11.75,38.4517,37.94A65.0249,65.0249,0,0,0,130.5215,73.77Z"
                 opacity="0.2" />

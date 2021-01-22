@@ -40,40 +40,27 @@ const yearpercent = () => {
   }
 };
 
-// const holidays = () => {
-//   const start_dates = [""];
-// };
-
-const Bottomright = (props) => {
+const Right = (props) => {
   // const [year, setYear] = React.useEffect(23);
   React.useEffect(() => {}, []);
   return (
-    <section className="bottom" id="bottomright">
+    <div id="right">
       <ReactTypingEffect
         text={["ИНФОГРАФИКА"]}
         className="section_title"
         speed={60}
         eraseDelay={800000000000}
         typingDelay={0}
+        style={{ paddingTop: 40 }}
+        cursorRenderer={(cursor) => <></>}
       />
-      <div className="graphs">
-        <Circlechart
-          series={yearpercent()}
-          title={"Учебный год"}
-          measure={"%"}
-        />
-        <Circlechart
-          series={45}
-          title={"До каникул"}
-          alternativeValue={"4 дня"}
-        />
-        <Circlechart
-          series={66}
-          title={"Что-нибудь"}
-          alternativeValue={"8 дней"}
-        />
-      </div>
-    </section>
+      <Circlechart series={yearpercent()} title={"Учебный год"} measure={"%"} />
+      <Circlechart
+        series={45}
+        title={"До каникул"}
+        alternativeValue={"4 дня"}
+      />
+    </div>
   );
 };
-export default Bottomright;
+export default Right;

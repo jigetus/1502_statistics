@@ -3,17 +3,17 @@
     <defs>
         <linearGradient id="708d7186-cba3-4575-a6dc-189fa292ce83" x1="111.7843" y1="111.6667" x2="20.3634" y2="20.2458"
             gradientUnits="userSpaceOnUse">
-            <stop offset="0" stop-color="#099cbe" />
-            <stop offset="1" stop-color="#0ba9c7" />
+            <stop offset="0" stop-color="#b31217" class="stopColor07758e svgShape" />
+            <stop offset="1" stop-color="#e52d27" class="stopColor087f95 svgShape" />
         </linearGradient>
         <linearGradient id="a" x1="111.667" x2="20.246" y1="111.667" y2="20.246" gradientUnits="userSpaceOnUse">
-            <stop offset="0" stop-color="#ca4e73" class="stopColor07758e svgShape" />
-            <stop offset="1" stop-color="#ffb859" class="stopColor087f95 svgShape" />
+            <stop offset="0" stop-color="#b31217" class="stopColor07758e svgShape" />
+            <stop offset="1" stop-color="#e52d27" class="stopColor087f95 svgShape" />
         </linearGradient>
         <linearGradient id="bec4a6e4-7120-433f-bd2e-2e21668cdb87" x1="111.7843" y1="111.6667" x2="20.3634" y2="20.2458"
             gradientUnits="userSpaceOnUse">
-            <stop offset="0" stop-color="#07758e" />
-            <stop offset="1" stop-color="#087f95" />
+            <stop offset="0" stop-color="#b31217" class="stopColor07758e svgShape" />
+            <stop offset="1" stop-color="#e52d27" class="stopColor087f95 svgShape" />
         </linearGradient>
         <linearGradient id="8b6fbdb6-3902-403b-b24e-ca599d763974" x1="237.5287" y1="107.6545" x2="156.5287" y2="24.4045"
             xlink:href="#708d7186-cba3-4575-a6dc-189fa292ce83" />
@@ -22,7 +22,7 @@
     <g id="8d4ff9fd-1ac1-4094-aaa3-665c10e6ca05" data-name="Layer 2">
         <g id="730b1c35-ed7f-4e81-9cb4-98ccd0de080f" data-name="Layer 1">
             <rect width="263" height="132" fill="none" />
-            <circle cx="66.1176" cy="66" r="65" fill="url(#708d7186-cba3-4575-a6dc-189fa292ce83)" />
+            <circle cx="66.1176" cy="66" r="69" fill="url(#708d7186-cba3-4575-a6dc-189fa292ce83)" />
             <path d="M36.8413,95.4316l35.2813,35.2815A65.0008,65.0008,0,0,0,130.83,72.0112L95.3918,36.573Z"
                 opacity="0.2" />
             <polygon

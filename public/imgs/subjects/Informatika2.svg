@@ -7,8 +7,8 @@
             <stop offset="1" stop-color="#087f95" />
         </linearGradient>
         <linearGradient id="a" x1="111.667" x2="20.246" y1="111.667" y2="20.246" gradientUnits="userSpaceOnUse">
-            <stop offset="0" stop-color="#ca4e73" class="stopColor07758e svgShape" />
-            <stop offset="1" stop-color="#ffb859" class="stopColor087f95 svgShape" />
+            <stop offset="0" stop-color="#b31217" class="stopColor07758e svgShape" />
+            <stop offset="1" stop-color="#e52d27" class="stopColor087f95 svgShape" />
         </linearGradient>
         <linearGradient id="bafd8e1d-6fb8-4b66-bf46-cae0618fb938" x1="242.0591" y1="111.0591" x2="151.0083" y2="20.0083"
             gradientUnits="userSpaceOnUse">
@@ -20,7 +20,7 @@
     <g id="612397be-4c19-44ab-a07f-34b1b341ea04" data-name="Layer 2">
         <g id="503760ed-fa45-41de-937a-5ae1da6ff83a" data-name="Layer 1">
             <rect width="263" height="132" fill="none" />
-            <circle cx="66.1176" cy="66" r="65" fill="url(#a)" />
+            <circle cx="66.1176" cy="66" r="69" fill="url(#a)" />
             <path
                 d="M85.7344,127.98A65.0232,65.0232,0,0,0,131.1177,66c0-1.41-.0605-2.8047-.1489-4.1919L98.4768,29.3164l-4.4529,4.3768-3.303,2.7524-6.5142-1.1008-5.7019,3.8767,4.8762,8.0509-1.5354-.3182-5.0908-5.0908-6.94,2.5973L67.6,44.0017l-.7434,1.566L50.4058,51.7242l9.2017,9.115L46.4058,88.6516Z"
                 opacity="0.2" />

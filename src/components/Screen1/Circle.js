@@ -4,21 +4,20 @@ import { animated, useSpring } from "react-spring";
 const Circle = (props) => {
   const transitions = useSpring({
     transform: "translate3d(0,0px,0)",
-    transform: "scale(1.3)",
     opacity: 1,
     from: {
       transform: `translate3d(0,${props.animationTop ? "-" : "+"}80px,0)`,
       opacity: 0,
-      transform: "scale(0)",
     },
-    // delay: props.delay,
+
+    delay: props.delay,
   });
   if (props.subject === undefined) return null;
   return (
-    <div className="circle-card noselect" style={transitions}>
+    <animated.div className="circle-card noselect" style={transitions}>
       <span
         className="title"
-        style={{ fontSize: props.subject.title.length >= 10 ? "20px" : "20px" }}
+        style={{ fontSize: props.subject.title.length >= 10 ? "28px" : "28px" }}
       >
         {props.subject.title}
       </span>
@@ -33,7 +32,7 @@ const Circle = (props) => {
       {/* <span className="medium">
         {parseFloat(props.subject.max_mark.toFixed(2))}
       </span> */}
-    </div>
+    </animated.div>
   );
 };
 export default Circle;

@@ -12,17 +12,17 @@
             <stop offset="1" stop-color="#c8bf8b" />
         </linearGradient>
         <linearGradient id="a" x1="111.667" x2="20.246" y1="111.667" y2="20.246" gradientUnits="userSpaceOnUse">
-            <stop offset="0" stop-color="#ca4e73" class="stopColor07758e svgShape" />
-            <stop offset="1" stop-color="#ffb859" class="stopColor087f95 svgShape" />
+            <stop offset="0" stop-color="#b31217" class="stopColor07758e svgShape" />
+            <stop offset="1" stop-color="#e52d27" class="stopColor087f95 svgShape" />
         </linearGradient>
     </defs>
     <title>Biologija</title>
     <g id="1ee1cd99-1594-49f8-b0ec-3247db568d03" data-name="Layer 2">
         <g id="ad46192e-7ef5-4902-b68e-ad25c33fd235" data-name="Layer 1">
             <rect width="263" height="132" fill="none" />
-            <circle cx="197" cy="66" r="65" fill="url(#9b407355-2a7d-4076-9661-55fc1fa851fb)" />
+            <circle cx="66" cy="66" r="67" fill="url(#9b407355-2a7d-4076-9661-55fc1fa851fb)" />
             <polygon points="81.908 39.458 93.376 50.927 84.277 60.304 67.314 43.341 81.908 39.458" opacity="0.05" />
-            <circle cx="66" cy="66" r="65" fill="url(#d2008a72-40bb-4819-b47d-533f9e544006)" />
+            <circle cx="66" cy="66" r="68" fill="url(#a)" />
             <path d="M36.0012,69.6667l55.937,55.937A65.1527,65.1527,0,0,0,128.281,84.613L97.0847,53.4167Z"
                 opacity="0.1" />
             <path

@@ -18,58 +18,82 @@ export default class Top10 extends React.Component {
             show: false,
           },
           animations: {
-            enabled: false,
+            enabled: true,
           },
+          type: "bar",
         },
         tooltip: {
           enabled: false,
         },
-        colors: ["#FFB859"],
+        plotOptions: {
+          bar: {
+            horizontal: true,
+          },
+        },
+
+        colors: ["#b31217"],
         fill: {
           type: "gradient",
           gradient: {
             shade: "dark",
             type: "vertical",
-            gradientToColors: ["#CA4E73"],
+            gradientToColors: ["#e52d27"],
             stops: [0, 100],
           },
         },
         xaxis: {
           categories: labels,
           labels: {
+            show: false,
             style: {
               fontWeight: "bold",
-              colors: "#fff",
-              fontSize: 21,
+              colors: "#000",
+              fontSize: 12,
               fontFamily: "VAG World Bold",
             },
           },
         },
         yaxis: {
-          show: false,
-          min: parseFloat((avgs[9] - 0.5).toFixed(2)),
-          max: parseFloat((avgs[0] + 0.1).toFixed(2)),
+          show: true,
+          // min: parseFloat((avgs[9] - 0.2).toFixed(2)),
+          // max: parseFloat((avgs[0] + 0.1).toFixed(2)),
+          // max: 4.7,
+          labels: {
+            style: {
+              colors: "#000",
+              fontSize: 26,
+              fontFamily: "VAG World Bold",
+              fontWeight: "bold",
+            },
+          },
         },
         dataLabels: {
           enabled: true,
-          offsetX: 0,
-          offsetY: 500,
+          textAnchor: "start",
+          // offsetX: -500,
+          // offsetY: -500,
+          style: {
+            colors: ["#fff"],
+            fontSize: 26,
+            fontFamily: "VAG World Bold",
+            fontWeight: "bold",
+          },
+          formatter: function (val, opt) {
+            return val;
+          },
+          offsetX: 200,
           dropShadow: {
             enabled: true,
-            left: 2,
             top: 2,
-            opacity: 0.5,
-          },
-          style: {
-            colors: ["white"],
-            fontSize: 17,
-            fontFamily: "VAG World Bold",
+            left: 2,
+            blur: 3,
+            color: "#000",
+            opacity: 0.6,
           },
         },
       },
       series: [
         {
-          name: "Средний балл",
           data: avgs,
         },
       ],
@@ -82,7 +106,8 @@ export default class Top10 extends React.Component {
         options={this.state.options}
         series={this.state.series}
         type="bar"
-        width="650"
+        width="800"
+        height="900"
       />
     );
   }
