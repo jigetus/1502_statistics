@@ -55,8 +55,8 @@ export default class Top10 extends React.Component {
         },
         yaxis: {
           show: true,
-          // min: parseFloat((avgs[9] - 0.2).toFixed(2)),
-          // max: parseFloat((avgs[0] + 0.1).toFixed(2)),
+          min: parseFloat((avgs[9] - 0.2).toFixed(2)),
+          max: parseFloat((avgs[0] + 0.1).toFixed(2)),
           // max: 4.7,
           labels: {
             style: {

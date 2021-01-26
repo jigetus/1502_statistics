@@ -54,12 +54,18 @@ const Right = (props) => {
         style={{ paddingTop: 40 }}
         cursorRenderer={(cursor) => <></>}
       />
-      <Circlechart series={yearpercent()} title={"Учебный год"} measure={"%"} />
-      <Circlechart
-        series={45}
-        title={"До каникул"}
-        alternativeValue={"4 дня"}
-      />
+      <div className="pie_container">
+        <Circlechart
+          series={yearpercent()}
+          title={"Учебный год"}
+          measure={"%"}
+        />
+        <Circlechart
+          series={45}
+          title={"До каникул"}
+          alternativeValue={"4 дня"}
+        />
+      </div>
     </div>
   );
 };

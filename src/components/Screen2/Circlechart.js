@@ -5,7 +5,7 @@ export default class Circlechart extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = {
+    this.settings = {
       series: [this.props.series],
       options: {
         chart: {
@@ -76,11 +76,11 @@ export default class Circlechart extends React.Component {
     return (
       <div id="chart">
         <ReactApexChart
-          options={this.state.options}
-          series={this.state.series}
+          options={this.settings.options}
+          series={this.settings.series}
           type="radialBar"
           height={420}
-          width={600}
+          width={400}
         />
       </div>
     );
