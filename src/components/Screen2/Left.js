@@ -1,7 +1,6 @@
 import React from "react";
 import ReactTypingEffect from "react-typing-effect";
 import Top10 from "./Top10";
-import Top10google from "./Top10google";
 
 const Left = (props) => {
   return (

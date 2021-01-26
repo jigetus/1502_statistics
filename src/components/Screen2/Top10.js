@@ -10,7 +10,7 @@ export default class Top10 extends React.Component {
       avgs.push(parseFloat(el.AVG.toFixed(2)));
       labels.push(el.unit);
     });
-    this.state = {
+    this.settings = {
       options: {
         chart: {
           id: "basic-bar",
@@ -55,13 +55,14 @@ export default class Top10 extends React.Component {
         },
         yaxis: {
           show: true,
-          min: parseFloat((avgs[9] - 0.2).toFixed(2)),
-          max: parseFloat((avgs[0] + 0.1).toFixed(2)),
-          // max: 4.7,
+          // min: parseFloat((avgs[9] - 0.2).toFixed(2)),
+          // max: parseFloat((avgs[0] + 0.1).toFixed(2)),
+          min: avgs[9] > 3.4 ? 3.4 : 3,
+          max: avgs[0] < 4.5 ? 4.5 : 5,
           labels: {
             style: {
               colors: "#000",
-              fontSize: 26,
+              fontSize: 32,
               fontFamily: "VAG World Bold",
               fontWeight: "bold",
             },
@@ -69,8 +70,8 @@ export default class Top10 extends React.Component {
         },
         dataLabels: {
           enabled: true,
-          textAnchor: "start",
-          // offsetX: -500,
+          // textAnchor: "start",
+          offsetX: 800,
           // offsetY: -500,
           style: {
             colors: ["#fff"],
@@ -81,7 +82,6 @@ export default class Top10 extends React.Component {
           formatter: function (val, opt) {
             return val;
           },
-          offsetX: 200,
           dropShadow: {
             enabled: true,
             top: 2,
@@ -103,8 +103,8 @@ export default class Top10 extends React.Component {
   render() {
     return (
       <Chart
-        options={this.state.options}
-        series={this.state.series}
+        options={this.settings.options}
+        series={this.settings.series}
         type="bar"
         width="800"
         height="900"

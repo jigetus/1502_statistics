@@ -41,30 +41,47 @@ const yearpercent = () => {
 };
 
 const Right = (props) => {
-  // const [year, setYear] = React.useEffect(23);
   React.useEffect(() => {}, []);
   return (
     <div id="right">
-      <ReactTypingEffect
-        text={["ИНФОГРАФИКА"]}
-        className="section_title"
-        speed={60}
-        eraseDelay={800000000000}
-        typingDelay={0}
-        style={{ paddingTop: 40 }}
-        cursorRenderer={(cursor) => <></>}
-      />
-      <div className="pie_container">
-        <Circlechart
-          series={yearpercent()}
-          title={"Учебный год"}
-          measure={"%"}
+      <div id="right_top">
+        <ReactTypingEffect
+          text={["ИНФОГРАФИКА"]}
+          className="section_title"
+          speed={60}
+          eraseDelay={800000000000}
+          typingDelay={0}
+          style={{ paddingTop: 40 }}
+          cursorRenderer={(cursor) => <></>}
         />
-        <Circlechart
-          series={45}
-          title={"До каникул"}
-          alternativeValue={"4 дня"}
-        />
+        <div className="pie_container">
+          <Circlechart
+            series={yearpercent()}
+            title={"Учебный год"}
+            measure={"%"}
+          />
+          <Circlechart
+            series={45}
+            title={"До каникул"}
+            alternativeValue={"4 дня"}
+          />
+        </div>
+      </div>
+      <div id="right_bot">
+        <blockquote>
+          <ReactTypingEffect
+            text={[
+              "Люди, считающие, что деньги способны сделать все, сами способны все сделать за деньги.",
+            ]}
+            speed={20}
+            eraseDelay={800000000000}
+            typingDelay={0}
+            cursorRenderer={() => ""}
+          />
+          <footer>
+            — <cite>Джейсон Стетхэм</cite>
+          </footer>
+        </blockquote>
       </div>
     </div>
   );

@@ -24,7 +24,7 @@ export default class Circlechart extends React.Component {
               size: "70%",
             },
             track: {
-              background: "#000000de",
+              background: "#494141",
               dropShadow: {
                 enabled: true,
                 top: 2,

@@ -225,8 +225,70 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
+}
+#right_top {
+  display: flex;
+  flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  height: 50%;
+}
+#right_bot {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 60px;
+  align-items: center;
+  height: 50%;
+  blockquote {
+    margin: 0;
+    background: transparent;
+    width: 100%;
+    padding: 40px;
+    color: #252b2e;
+    position: relative;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+  }
+  blockquote:before,
+  blockquote:after {
+    font-size: 45px;
+    color: #e52d27;
+    position: absolute;
+    height: 4px;
+    left: 40px;
+    right: 40px;
+    line-height: 0.5;
+    background: linear-gradient(
+        to right,
+        #e52d27 45%,
+        transparent 45%,
+        transparent
+      ),
+      linear-gradient(to right, transparent, transparent 55%, #e52d27 55%);
+    font-family: serif;
+  }
+  blockquote:before {
+    content: "\201C";
+    top: 30px;
+  }
+  blockquote:after {
+    content: "\201D";
+    bottom: 30px;
+  }
+  blockquote span div {
+    font-size: 48px;
+    padding-top: 10px;
+    width: 100%;
+  }
+  blockquote footer {
+    margin-bottom: 1em;
+    margin-top: 1em;
+  }
+  blockquote cite {
+    font-style: normal;
+    font-size: 24px;
+  }
 }
 .pie_container {
   display: flex;
