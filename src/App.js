@@ -26,7 +26,7 @@ const fetchData = async () => {
 const App = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
-  const [screen, setScreen] = useState(false);
+  const [screen, setScreen] = useState(true);
   const [best, setBest] = useState(null);
   const [top, setTop] = useState(null);
   useEffect(() => {
@@ -43,12 +43,12 @@ const App = () => {
       });
   }, [loading, error]);
 
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     setScreen(!screen);
-  //   }, 10000);
-  //   return () => clearInterval(interval);
-  // }, [screen]);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setScreen(!screen);
+    }, 10000);
+    return () => clearInterval(interval);
+  }, [screen]);
 
   if (loading) return <></>;
   if (error)
