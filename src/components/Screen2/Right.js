@@ -2,11 +2,12 @@ import React from "react";
 import Circlechart from "./Circlechart";
 import ReactTypingEffect from "react-typing-effect";
 import moment from "moment";
+import Quotes from "./Quotes";
 
 const yearpercent = () => {
   //Тесты
   const current = moment();
-  const full_study_year = 272; //days;
+  const full_study_year = 273; //days;
   //Проверка на летние месяцы
   if (
     parseInt(current.format("M")) === 6 ||
@@ -14,7 +15,7 @@ const yearpercent = () => {
     parseInt(current.format("M")) === 8
   )
     return 0;
-
+  //До или после нового года
   if (
     parseInt(current.format("M")) === 9 ||
     parseInt(current.format("M")) === 10 ||
@@ -41,7 +42,10 @@ const yearpercent = () => {
 };
 
 const Right = (props) => {
-  React.useEffect(() => {}, []);
+  const getRandomQuoteIndex = () => {
+    return Math.round(Math.random() * (Quotes.length - 1) + 0);
+  };
+  const quote = Quotes[getRandomQuoteIndex()];
   return (
     <div id="right">
       <div id="right_top">
@@ -70,16 +74,14 @@ const Right = (props) => {
       <div id="right_bot">
         <blockquote>
           <ReactTypingEffect
-            text={[
-              "Люди, считающие, что деньги способны сделать все, сами способны все сделать за деньги.",
-            ]}
+            text={[quote.text]}
             speed={20}
             eraseDelay={800000000000}
             typingDelay={0}
             cursorRenderer={() => ""}
           />
           <footer>
-            — <cite>Джейсон Стетхэм</cite>
+            — <cite>{quote.author}</cite>
           </footer>
         </blockquote>
       </div>
