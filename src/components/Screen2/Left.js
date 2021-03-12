@@ -11,7 +11,7 @@ const Left = (props) => {
         speed={60}
         eraseDelay={800000000000}
         typingDelay={0}
-        style={{ paddingTop: 40 }}
+        style={{ paddingTop: 40, paddingBottom: 30 }}
         cursorRenderer={(cursor) => <></>}
       />
       <Top10 top={props.top} />

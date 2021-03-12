@@ -46,7 +46,7 @@ const App = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setScreen(!screen);
-    }, 10000);
+    }, 15000);
     return () => clearInterval(interval);
   }, [screen]);
 
