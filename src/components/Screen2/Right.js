@@ -52,20 +52,20 @@ function num_word(value) {
 //Передавать первый год в учебных (например, 2020-2021 учебный год - в функцию передать 2020)
 const get_array_kanikuli = (firstYear) => [
   {
-    start: moment(`07-10-${firstYear}`, "DD-MM-YYYY"),
-    end: moment(`18-10-${firstYear}`, "DD-MM-YYYY"),
+    start: moment(`30-10-${firstYear}`, "DD-MM-YYYY"),
+    end: moment(`7-11-${firstYear}`, "DD-MM-YYYY"),
   },
   {
     start: moment(`31-12-${firstYear}`, "DD-MM-YYYY"),
-    end: moment(`17-01-${firstYear + 1}`, "DD-MM-YYYY"),
+    end: moment(`9-01-${firstYear + 1}`, "DD-MM-YYYY"),
   },
   {
-    start: moment(`23-02-${firstYear + 1}`, "DD-MM-YYYY"),
-    end: moment(`28-02-${firstYear + 1}`, "DD-MM-YYYY"),
+    start: moment(`19-02-${firstYear + 1}`, "DD-MM-YYYY"),
+    end: moment(`27-02-${firstYear + 1}`, "DD-MM-YYYY"),
   },
   {
-    start: moment(`07-04-${firstYear + 1}`, "DD-MM-YYYY"),
-    end: moment(`11-04-${firstYear + 1}`, "DD-MM-YYYY"),
+    start: moment(`09-04-${firstYear + 1}`, "DD-MM-YYYY"),
+    end: moment(`17-04-${firstYear + 1}`, "DD-MM-YYYY"),
   },
   {
     start: moment(`01-06-${firstYear + 1}`, "DD-MM-YYYY"),
@@ -75,7 +75,7 @@ const get_array_kanikuli = (firstYear) => [
 
 const get_kanikuli_days = () => {
   //НА СЛЕДУЮЩИЙ УЧЕБНЫЙ ГОД МЕНЯТЬ ВОТ ТУТ!!!!!!!!!!!!!!!!!!!!!!!!!
-  const kanikuli = get_array_kanikuli(2020);
+  const kanikuli = get_array_kanikuli(2021);
   const current = moment();
   //Сейчас каникулы?
   let kanikuli_now = false;

@@ -5,7 +5,7 @@ const Top10 = (props) => {
   const avgs = [];
   const labels = [];
   props.top.forEach((el) => {
-    avgs.push(parseFloat(el.AVG.toFixed(2)));
+    avgs.push(el.AVG !== null ? parseFloat(el.AVG.toFixed(2)) : 0);
     labels.push(el.unit);
   });
   const settings = {

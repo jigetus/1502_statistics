@@ -28,10 +28,9 @@ const Circle = (props) => {
           backgroundPosition: props.offset ? `0px 0px` : `-100px -1px`,
         }}
       ></div>
-      <span className="class">{props.subject.unit}</span>
-      {/* <span className="medium">
-        {parseFloat(props.subject.max_mark.toFixed(2))}
-      </span> */}
+      <span className="class">
+        {props.subject.unit == null ? "Оценок нет" : props.subject.unit}
+      </span>
     </animated.div>
   );
 };

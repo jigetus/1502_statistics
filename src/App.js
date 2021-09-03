@@ -9,8 +9,13 @@ import { CSSTransition, SwitchTransition } from "react-transition-group";
 const api = "http://api.stats.srv-g-lemp.lyceum.local";
 const fetchData = async () => {
   return new Promise(async (resolve, reject) => {
-    const best = await fetch(api + "/bestunitsinsubjects?korpus=gamma");
-    const top = await fetch(api + "/top10avg?korpus=gamma");
+    const best = await fetch(api + "/bestunitsinsubjects?korpus=gamma", {
+      // mode: "no-cors",
+    });
+    const top = await fetch(api + "/top10avg?korpus=gamma", {
+      // mode: "no-cors",
+    });
+    console.log(top);
     if (best.ok && top.ok) {
       const best_json = await best.json();
       const top_json = await top.json();
